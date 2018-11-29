@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_header_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/item_daily_bump_header_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:clickable="true"-->
+    <!--android:focusable="true"-->
+    <!--app:cardElevation="@dimen/_5sdp">-->
+
+    <RelativeLayout
+        android:id="@+id/item_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/_8sdp">
+
+        <TextView
+            android:id="@+id/item_header_layout_title_tv"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+
+            />
+
+        <TextView
+            android:id="@+id/item_header_layout_count_tv"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_toEndOf="@id/item_header_layout_title_tv"
+            android:gravity="center_vertical"
+            android:textColor="@color/primary_text_color_54"
+             />
+
+        <CheckBox
+            android:id="@+id/item_header_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:button="@drawable/custom_round_checkbox"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+    <!--</android.support.v7.widget.CardView>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_section_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_header_layout"
+
+        android:paddingEnd="@dimen/_3sdp"
+        android:paddingStart="@dimen/_3sdp" />
+</RelativeLayout>

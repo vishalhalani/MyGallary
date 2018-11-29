@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyGallary</string>
+    <string name="no_photo_yet">No Photo Yet!</string>
+    <string name="clear">Clear</string>
+    <string name="delete">Delete</string>
+    <string name="no_item_selected">No item selected.</string>
+</resources>
